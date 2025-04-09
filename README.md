@@ -10,4 +10,4 @@ The users can simply install the *beach_ball.zip* from the "manage and install p
 
 *example* folder contains a small dataset of focal mechanism from [Time Domain Moment Tensor (Scognamiglio et al., 2006)](https://terremoti.ingv.it/tdmt) for performing a test of the plugin.
 
-**beach_ball** is released under MIT licence.
+**beach_ball** is released under [MIT licence](LICENSE).
