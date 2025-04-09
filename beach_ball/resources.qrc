@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/beach_ball" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
