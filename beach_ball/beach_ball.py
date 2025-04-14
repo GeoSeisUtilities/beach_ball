@@ -303,9 +303,8 @@ class BeachBall:
             nvi = 0
             for feature in clone_layer.getFeatures():
                 try:
-                    id_v = float(feature[id_idx])
-                except:
                     id_v = feature[id_idx]
+                except:
                     svg_file = f'{output_path}/bb_svg/NotValid{nvi}.svg'
                     clone_layer.changeAttributeValue(feature.id(), id_svg_col, svg_file)
                     beachball([0, 0, 0], size=0, linewidth=0, facecolor='white', outfile=svg_file)
@@ -314,7 +313,6 @@ class BeachBall:
                 try:
                     strike = float(feature[strike_idx])
                 except:
-                    strike = feature[strike_idx]
                     svg_file = f'{output_path}/bb_svg/NotValid{nvi}.svg'
                     clone_layer.changeAttributeValue(feature.id(), id_svg_col, svg_file)
                     beachball([0, 0, 0], size=0, linewidth=0, facecolor='white', outfile=svg_file)
@@ -323,7 +321,6 @@ class BeachBall:
                 try:
                     dip = float(feature[dip_idx])
                 except:
-                    dip = feature[dip_idx]
                     svg_file = f'{output_path}/bb_svg/NotValid{nvi}.svg'
                     clone_layer.changeAttributeValue(feature.id(), id_svg_col, svg_file)
                     beachball([0, 0, 0], size=0, linewidth=0, facecolor='white', outfile=svg_file)
@@ -332,7 +329,6 @@ class BeachBall:
                 try:
                     rake = float(feature[rake_idx])
                 except:
-                    rake = feature[rake_idx]
                     svg_file = f'{output_path}/bb_svg/NotValid{nvi}.svg'
                     clone_layer.changeAttributeValue(feature.id(), id_svg_col, svg_file)
                     beachball([0, 0, 0], size=0, linewidth=0, facecolor='white', outfile=svg_file)
